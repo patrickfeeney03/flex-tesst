@@ -1,0 +1,100 @@
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightcyan;
+    background-color: brown;
+    padding: 10px;
+}
+
+.flex {
+    /*margin: 10px;*/
+    border: 5px solid beige;
+    padding: 10px;
+    display: flex; /*This should make the parent div a flex container*/
+}
+
+.flex > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.flex > div:nth-child(1) {
+    background-color: lightcoral;
+    flex: 3 1 auto;
+
+}
+
+.flex > div:nth-child(2) {
+    background-color: lightsalmon;
+    flex: 2 1 auto;
+
+}
+
+.flex > div:nth-child(3) {
+    background-color: lightcoral;
+    flex: 1 1 auto;
+
+}
+
+
+/* This wont have a white space between the flex items and flex container like
+the first flexbox*/
+
+.flex2 {
+    border: 5px dotted lightsteelblue;
+    margin: 50px 5px 5px 5px;
+    display: flex;
+}
+
+.flex2 > div {
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    flex: 1 1 auto;
+    color: grey;
+}
+
+.flex2 > div:nth-child(1) {
+    background-color: lightsalmon;
+    flex-grow: 0;
+
+}
+.flex2 > div:nth-child(2) {
+    background-color: thistle;
+    flex-grow: 0;
+}
+.flex2 > div:nth-child(3) {
+    background-color: lightsalmon;
+    text-align: left;
+    flex-grow: 5;
+    flex-basis: 30em;
+}
+
+
+
+
+
+
+.flex3 {
+    display: flex;
+    margin: 10px;
+    margin-top: 50px;
+    border: 5px solid grey;
+}
+
+.flex3 > div {
+    padding: 20px;
+    padding: 50px 20px 50px 20px;
+    background: black;
+    color: white;
+    flex: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex3 > div:nth-child(2) {
+    background-color: white;
+    color: black;
+}
+
